@@ -1,0 +1,11 @@
+{
+  "name": "async-if-inline",
+  "version": "1.0.0",
+  "description": "Simple inline async if, else control flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Mike \"yo1dog\" Moore",
+  "license": "ISC"
+}
