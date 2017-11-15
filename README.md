@@ -88,7 +88,7 @@ function buyModernVehicle(date, topCb) {
 aif     (test, cb => {})
 .elseIf (test, cb => {})
 .else   (cb => {})
-.finally((..args) => {})
+.finally((...args) => {})
 ```
 
 ### Tests
@@ -132,19 +132,19 @@ aif  (() => v < 0, cb => cb('A'))
 aif    (true, cb => cb('A', 1))
 .elseIf(true, cb => cb('B', null, 2))
 .else  (      cb => cb('C', []))
-.finally((..args) => console.log(args));
+.finally((...args) => console.log(args));
 // prints ['A', 1]
 
 aif    (false, cb => cb('A', 1))
 .elseIf(true,  cb => cb('B', null, 2))
 .else  (       cb => cb('C', []))
-.finally((..args) => console.log(args));
+.finally((...args) => console.log(args));
 // prints ['B', null, 2]
 
 aif    (false, cb => cb('A', 1))
 .elseIf(false, cb => cb('B', null, 2))
 .else  (       cb => cb('C', []))
-.finally((..args) => console.log(args));
+.finally((...args) => console.log(args));
 // prints ['C', []]
 ```
 
